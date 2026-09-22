@@ -14,4 +14,5 @@ jobs:
         with:
           python-version: "3.13"
       - name: Run tests
-        run: python -m unittest discover
+        run: |
+          python -m unittest discover -s duck_test -v
